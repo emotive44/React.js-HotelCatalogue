@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from '../common/title/Title';
+import Title from '../common/Title';
 import { services } from '../../mocks/services';
-import './Services.css';
+import '../styles/Services.css';
 
 const Services = () =>{
   return (

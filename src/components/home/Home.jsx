@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Services from './Services';
-import Hero from '../common/hero/Hero';
-import Banner from '../common/banner/Banner';
+import Hero from '../common/Hero';
+import Banner from '../common/Banner';
 
 const Home = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Hero from '../common/hero/Hero';
-import Banner from '../common/banner/Banner';
+import Hero from '../common/Hero';
+import Banner from '../common/Banner';
 
 const Error = () => {
     return (
