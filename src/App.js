@@ -5,7 +5,7 @@ import Home from './components/home/Home'
 import Error from './components/error/Error'
 import Rooms from './components/rooms/Rooms'
 import Navbar from './components/navbar/Navbar'
-import SingleRoom from './components/rooms/SingleRoom'
+import SingleRoom from './components/single-room/SingleRoom'
 
 function App() {
   return (

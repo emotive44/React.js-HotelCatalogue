@@ -12,7 +12,16 @@ export default class RoomProvider extends React.Component {
     }
     componentDidMount() {
         let formatedRooms = this.formatData(rooms);
-        console.log(formatedRooms)
+        let featuredRooms = formatedRooms.filter(room => {
+            return room.featured === true;
+        });
+        
+        this.setState({
+            featuredRooms,
+            loading: false,
+            rooms: formatedRooms,
+            sortedRooms: formatedRooms
+        });
     }
     formatData(rooms) {
         let tempRooms = rooms.map(room => {
@@ -20,14 +29,14 @@ export default class RoomProvider extends React.Component {
             let images = room.fields.images.map(image => {
                 return image.fields.file.url;
             });
-            let tempRoom = {...rooms.fields, images, id}
+            let tempRoom = {...room.fields, images, id}
             return tempRoom;
         })
         return tempRooms;
     }
     render () {
         return (
-            <RoomContext.Provider value={'da'}>
+            <RoomContext.Provider value={{...this.state}}>
                 {this.props.children}
             </RoomContext.Provider>
         )
