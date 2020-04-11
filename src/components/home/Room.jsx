@@ -4,7 +4,6 @@ import '../styles/Room.css'
 
 const Room = (props) => {
     const { name, slug, images, price } = props;
-    console.log(images)
     return (
         <article className="room">
             <div className="img-container">
@@ -17,6 +16,7 @@ const Room = (props) => {
                     Features
                 </Link>
             </div>
+            <p className="room-info">{name}</p>
         </article>
     );
 }
