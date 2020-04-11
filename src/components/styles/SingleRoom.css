@@ -54,3 +54,21 @@
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
 }
+
+
+@media screen and (min-width: 992px) {
+    .single-room-images,
+    .single-room-info,
+    .room-extras {
+      width: 95vw;
+      max-width: 1170px;
+    }
+    .single-room-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+    }
+    .info {
+      padding-left: 3rem;
+    }
+}

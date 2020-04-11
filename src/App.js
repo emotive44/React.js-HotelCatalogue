@@ -13,13 +13,12 @@ function App() {
     <Fragment>
       <Navbar />
         <ScrollToTop>
-      <Switch>
-
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/rooms' component={Rooms}/>
-        <Route path='/rooms/:id' component={SingleRoom}/>
-        <Route component={Error}/>
-      </Switch>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/rooms' component={Rooms}/>
+            <Route path='/rooms/:id' component={SingleRoom}/>
+            <Route component={Error}/>
+          </Switch>
         </ScrollToTop>
     </Fragment>
   );

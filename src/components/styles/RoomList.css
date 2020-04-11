@@ -9,3 +9,15 @@
     grid-row-gap: 2rem;
     grid-column-gap: 30px;
 }
+
+@media screen and (min-width: 776px) {
+  .roomslist-center {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .roomslist-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
