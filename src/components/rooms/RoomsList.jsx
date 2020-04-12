@@ -3,7 +3,6 @@ import Room from '../common/Room';
 import '../styles/RoomList.css';
 
 const RoomsList = ({ rooms }) => {
-console.log(rooms)
     if(rooms.length < 1) {
         return (
             <div className="empty-search">
